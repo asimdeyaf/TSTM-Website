@@ -526,6 +526,7 @@ body.home-page {
     radial-gradient(1200px 520px at 88% -20%, rgba(102, 147, 194, 0.45) 0%, transparent 60%),
     linear-gradient(180deg, #071018 0%, #0d1722 58%, #0d1722 100%);
   min-height: 100vh;
+  font-family: "Avenir Next", "Avenir", "Helvetica Neue", "Segoe UI", sans-serif;
 }
 
 body.home-page .site-shell.home-shell {
@@ -560,27 +561,50 @@ body.home-page .home-logo-link {
 
 body.home-page .home-menu {
   position: absolute;
-  top: 1.08rem;
-  right: 0;
+  top: 1.42rem;
+  right: 0.62rem;
 }
 
 body.home-page .home-menu-trigger {
   appearance: none;
-  border: 1px solid rgba(173, 202, 233, 0.34);
-  border-radius: 999px;
-  background: rgba(8, 14, 21, 0.55);
-  color: #ecf3fc;
+  border: 0;
+  background: transparent;
+  color: #e4eef9;
   font: inherit;
-  font-size: 0.98rem;
-  padding: 0.34rem 0.74rem;
+  font-size: 0.86rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.1rem;
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 body.home-page .home-menu-trigger:hover,
 body.home-page .home-menu-trigger:focus-visible {
-  border-color: rgba(213, 232, 252, 0.72);
   color: #fff;
   outline: none;
+}
+
+body.home-page .home-menu-label {
+  line-height: 1;
+}
+
+body.home-page .home-menu-icon {
+  width: 16px;
+  height: 12px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body.home-page .home-menu-icon span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: currentColor;
 }
 
 body.home-page .home-menu-panel {
@@ -841,6 +865,11 @@ body.home-page .footer-copy {
   letter-spacing: 0.05em;
 }
 
+body.home-page .footer-copy-symbol {
+  font-size: 1em;
+  vertical-align: baseline;
+}
+
 @keyframes tstm-home-marquee {
   0% { transform: translateX(0); }
   100% { transform: translateX(-34%); }
@@ -857,12 +886,12 @@ body.home-page .footer-copy {
   }
 
   body.home-page .home-menu {
-    top: 0.78rem;
-    right: 0;
+    top: 0.95rem;
+    right: 0.18rem;
   }
 
   body.home-page .home-menu-trigger {
-    font-size: 0.86rem;
+    font-size: 0.8rem;
   }
 
   body.home-page .home-menu-panel {
