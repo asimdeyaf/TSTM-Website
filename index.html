@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="./assets/css/site.css" />
   </head>
   <body class="home-page">
-    <div class="site-shell">
-      <header class="site-header">
-        <div class="nav-wrap">
-          <a class="logo-link" href="./" aria-label="The Simulation home">
+    <div class="site-shell home-shell">
+      <header class="site-header home-header">
+        <div class="nav-wrap home-nav-wrap">
+          <a class="logo-link home-logo-link" href="./" aria-label="The Simulation home">
             <img src="./assets/images/tstm-logo.webp" alt="The Simulation" />
           </a>
-          <nav class="nav-links" aria-label="Main navigation">
-            <details class="dropdown">
+          <nav class="nav-links home-nav-links" aria-label="Main navigation">
+            <details class="dropdown home-dropdown">
               <summary>More</summary>
-              <div class="dropdown-panel">
+              <div class="dropdown-panel home-dropdown-panel">
                 <a href="./about/">About</a>
                 <a href="./contact/">Contact</a>
                 <a href="./contact-1.html">Contact 1</a>
@@ -31,9 +31,9 @@
                 <a href="./dev-book/">Dev Book</a>
               </div>
             </details>
-            <details class="dropdown">
+            <details class="dropdown home-dropdown">
               <summary>Restricted Access</summary>
-              <div class="dropdown-panel">
+              <div class="dropdown-panel home-dropdown-panel">
                 <a href="./story-outline/">Story Outline</a>
                 <a href="./story-animatics/">Story Animatics</a>
               </div>
@@ -42,16 +42,22 @@
         </div>
       </header>
 
-      <main class="page-main">
+      <main class="page-main home-main">
         <section class="home-hero" aria-label="Hero section">
-          <div class="home-overlay">
+          <div class="home-hero-content">
+            <p class="home-kicker">The Simulation(TM)</p>
             <h1 class="home-title">Welcome to The Simulation(TM)</h1>
             <p class="home-subtitle"><strong>A VR Journey Like No Other</strong></p>
+            <p class="home-copy">Story-driven immersive worlds built for deliberate choices and consequences.</p>
+            <div class="home-cta-row">
+              <a class="home-cta home-cta-primary" href="./restricted-access/">Enter Restricted Access</a>
+              <a class="home-cta" href="./about/">Learn More</a>
+            </div>
           </div>
         </section>
 
-        <section class="marquee home-marquee" aria-label="Tagline strip">
-          <div class="marquee-track">
+        <section class="home-marquee" aria-label="Tagline strip">
+          <div class="home-marquee-track">
             <span>Simulate the Past. Predict the future.(TM)</span>
             <span>Simulate the Past. Predict the future.(TM)</span>
             <span>Simulate the Past. Predict the future.(TM)</span>
@@ -60,18 +66,32 @@
         </section>
       </main>
 
-      <footer class="site-footer">
+      <footer class="site-footer home-footer-shell">
         <div class="footer-inner home-footer">
           <nav class="footer-social" aria-label="Social links">
-            <a class="footer-social-link" href="https://www.youtube.com/@TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
-            <a class="footer-social-link" href="https://x.com/TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
-            <a class="footer-social-link" href="https://www.facebook.com/profile.php?id=61561556140617&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
-            <a class="footer-social-link" href="https://www.instagram.com/thesimulationtm/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
-            <a class="footer-social-link" href="https://www.tiktok.com/@thesimulationtm" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TT</a>
-            <a class="footer-social-link" href="https://www.reddit.com/r/TheSimulationTM/" target="_blank" rel="noopener noreferrer" aria-label="Reddit">R</a>
-            <a class="footer-social-link" href="https://www.linkedin.com/company/vr-sim-labs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN</a>
+            <a class="footer-social-link" href="https://www.youtube.com/@TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <img src="./assets/icons/social/youtube.svg" alt="" />
+            </a>
+            <a class="footer-social-link" href="https://x.com/TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <img src="./assets/icons/social/x.svg" alt="" />
+            </a>
+            <a class="footer-social-link" href="https://www.facebook.com/profile.php?id=61561556140617&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <img src="./assets/icons/social/facebook.svg" alt="" />
+            </a>
+            <a class="footer-social-link" href="https://www.instagram.com/thesimulationtm/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <img src="./assets/icons/social/instagram.svg" alt="" />
+            </a>
+            <a class="footer-social-link" href="https://www.tiktok.com/@thesimulationtm" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+              <img src="./assets/icons/social/tiktok.svg" alt="" />
+            </a>
+            <a class="footer-social-link" href="https://www.reddit.com/r/TheSimulationTM/" target="_blank" rel="noopener noreferrer" aria-label="Reddit">
+              <img src="./assets/icons/social/reddit.svg" alt="" />
+            </a>
+            <a class="footer-social-link" href="https://www.linkedin.com/company/vr-sim-labs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="./assets/icons/social/linkedin.svg" alt="" />
+            </a>
           </nav>
-          <p class="footer-copy"><strong>(C) 2024 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p>
+          <p class="footer-copy"><strong>(C) 2026 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p>
         </div>
       </footer>
     </div>
