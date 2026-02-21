@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/site.css" />
   </head>
-  <body>
+  <body class="home-page">
     <div class="site-shell">
       <header class="site-header">
         <div class="nav-wrap">
@@ -18,80 +18,61 @@
             <img src="./assets/images/tstm-logo.webp" alt="The Simulation" />
           </a>
           <nav class="nav-links" aria-label="Main navigation">
-            <a class="nav-link" href="./about/">About</a>
-            <a class="nav-link" href="./contact/">Contact</a>
-            <a class="nav-link" href="./faqs/">FAQs</a>
-            <a class="nav-link" href="./support/">Support</a>
             <details class="dropdown">
               <summary>More</summary>
               <div class="dropdown-panel">
+                <a href="./about/">About</a>
+                <a href="./contact/">Contact</a>
+                <a href="./contact-1.html">Contact 1</a>
+                <a href="./faqs/">FAQs</a>
                 <a href="./privacy-policy/">Privacy Policy</a>
+                <a href="./support/">Support</a>
                 <a href="./mock-app-store/">Mock App Store</a>
                 <a href="./dev-book/">Dev Book</a>
               </div>
             </details>
-            <a class="nav-link cta" href="./restricted-access/">Restricted Access</a>
+            <details class="dropdown">
+              <summary>Restricted Access</summary>
+              <div class="dropdown-panel">
+                <a href="./story-outline/">Story Outline</a>
+                <a href="./story-animatics/">Story Animatics</a>
+              </div>
+            </details>
           </nav>
         </div>
       </header>
 
       <main class="page-main">
-        <section class="hero" aria-label="Hero section">
-          <div class="hero-inner">
-            <p class="eyebrow">Official Project Site</p>
-            <h1>The Simulation(TM)</h1>
-            <p class="lead">
-              This clean web build mirrors your current Squarespace structure, while moving hosting and version control into your own GitHub-managed stack.
-            </p>
-            <div class="actions">
-              <a class="button primary" href="./restricted-access/">Open Restricted Access</a>
-              <a class="button" href="./about/">Read About</a>
-              <a class="button" href="./support/">Support Links</a>
-            </div>
+        <section class="home-hero" aria-label="Hero section">
+          <div class="home-overlay">
+            <h1 class="home-title">Welcome to The Simulation(TM)</h1>
+            <p class="home-subtitle"><strong>A VR Journey Like No Other</strong></p>
           </div>
         </section>
 
-        <section class="marquee" aria-label="Brand strip">
+        <section class="marquee home-marquee" aria-label="Tagline strip">
           <div class="marquee-track">
-            <span>THE SIMULATION(TM)</span>
-            <span>STORY</span>
-            <span>ANIMATICS</span>
-            <span>NARRATIVE</span>
-            <span>THE SIMULATION(TM)</span>
-            <span>STORY</span>
-            <span>ANIMATICS</span>
-            <span>NARRATIVE</span>
+            <span>Simulate the Past. Predict the future.(TM)</span>
+            <span>Simulate the Past. Predict the future.(TM)</span>
+            <span>Simulate the Past. Predict the future.(TM)</span>
+            <span>Simulate the Past. Predict the future.(TM)</span>
           </div>
-        </section>
-
-        <section class="panel-grid" aria-label="Quick links">
-          <article class="panel">
-            <h2>Story + Animatics</h2>
-            <p>Available via passcode-gated portal. Story and animatic open in separate tabs.</p>
-          </article>
-          <article class="panel">
-            <h2>Team Contact</h2>
-            <p>Use the contact page for inquiry routes and project-related communication.</p>
-          </article>
-          <article class="panel">
-            <h2>Migration Status</h2>
-            <p>Homepage and key pages are now code-managed and deployable from GitHub.</p>
-          </article>
-        </section>
-
-        <section class="social-strip" aria-label="Social links">
-          <a class="social-chip" href="https://www.youtube.com/@TheSimulationTM" target="_blank" rel="noopener noreferrer">YouTube</a>
-          <a class="social-chip" href="https://x.com/TheSimulationTM" target="_blank" rel="noopener noreferrer">X</a>
-          <a class="social-chip" href="https://www.facebook.com/profile.php?id=61561556140617&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer">Facebook</a>
-          <a class="social-chip" href="https://www.instagram.com/thesimulationtm/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a class="social-chip" href="https://www.tiktok.com/@thesimulationtm" target="_blank" rel="noopener noreferrer">TikTok</a>
-          <a class="social-chip" href="https://www.reddit.com/r/TheSimulationTM/" target="_blank" rel="noopener noreferrer">Reddit</a>
-          <a class="social-chip" href="https://www.linkedin.com/company/vr-sim-labs" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </section>
       </main>
 
       <footer class="site-footer">
-        <div class="footer-inner">The Simulation(TM) | Code-managed website migration in progress.</div>
+        <div class="footer-inner home-footer">
+          <nav class="footer-social" aria-label="Social links">
+            <a class="footer-social-link" href="https://www.youtube.com/@TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+            <a class="footer-social-link" href="https://x.com/TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="X">X</a>
+            <a class="footer-social-link" href="https://www.facebook.com/profile.php?id=61561556140617&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+            <a class="footer-social-link" href="https://www.instagram.com/thesimulationtm/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+            <a class="footer-social-link" href="https://www.tiktok.com/@thesimulationtm" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TT</a>
+            <a class="footer-social-link" href="https://www.reddit.com/r/TheSimulationTM/" target="_blank" rel="noopener noreferrer" aria-label="Reddit">R</a>
+            <a class="footer-social-link" href="https://www.linkedin.com/company/vr-sim-labs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">IN</a>
+          </nav>
+          <p class="footer-copy"><strong>(C) 2024 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p>
+        </div>
       </footer>
     </div>
   </body>
