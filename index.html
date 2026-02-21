@@ -7,27 +7,25 @@
     <meta name="description" content="The Simulation official portal." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Teko:wght@600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Teko:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/site.css" />
   </head>
   <body class="home-page">
     <div class="site-shell home-shell">
       <header class="site-header home-header">
-        <div class="home-topbar">
-          <a class="logo-link home-logo-link" href="./" aria-label="The Simulation home">
+        <div class="site-topbar">
+          <a class="logo-link site-logo-link" href="./" aria-label="The Simulation home">
             <img src="./assets/images/tstm-logo.webp" alt="The Simulation" />
           </a>
-          <div class="home-menu" id="home-menu">
-            <button class="home-menu-trigger" type="button" aria-expanded="false" aria-controls="home-menu-panel">
-              <span class="home-menu-label">Menu</span>
-              <span class="home-menu-icon" aria-hidden="true">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
+          <div class="site-menu" data-site-menu>
+            <button class="site-menu-trigger" type="button" aria-expanded="false" aria-controls="site-menu-panel">
+              <span class="site-menu-label">Menu</span>
+              <span class="site-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
             </button>
-            <div class="home-menu-panel" id="home-menu-panel" role="menu">
-              <p class="home-menu-group-label">Public Stuff</p>
+            <div class="site-menu-panel" id="site-menu-panel" role="menu">
               <a href="./about/">About</a>
               <a href="./contact/">Contact</a>
               <a href="./contact-1.html">Credits</a>
@@ -36,26 +34,18 @@
               <a href="./support/">Support</a>
               <a href="./mock-app-store/">Mock App Store</a>
               <a href="./dev-book/">Dev Book</a>
-              <p class="home-menu-group-label">Restricted Access</p>
-              <a href="./story-outline/">Story Outline</a>
-              <a href="./story-animatics/">Story Animatics</a>
-              <a class="home-menu-restricted" href="./restricted-access/">Restricted Access</a>
+              <a class="site-menu-restricted" href="./restricted-access/">Restricted Access</a>
             </div>
           </div>
         </div>
       </header>
 
       <main class="page-main home-main">
-        <section class="home-hero" aria-hidden="true">
-        </section>
+        <section class="home-hero" aria-hidden="true"></section>
 
         <section class="home-marquee" aria-label="Tagline strip">
           <div class="home-marquee-track">
             <div class="home-marquee-seq">
-              <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
-              <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
-              <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
-              <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
               <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
               <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
               <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
@@ -74,17 +64,13 @@
               <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
               <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
               <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
-              <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
-              <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
-              <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
-              <span>SIMULATE THE PAST. PREDICT THE FUTURE.™</span>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="site-footer home-footer-shell">
-        <div class="footer-inner home-footer">
+      <footer class="site-footer">
+        <div class="footer-inner">
           <nav class="footer-social" aria-label="Social links">
             <a class="footer-social-link" href="https://www.youtube.com/@TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <img src="./assets/icons/social/youtube.svg" alt="" />
@@ -108,40 +94,10 @@
               <img src="./assets/icons/social/linkedin.svg" alt="" />
             </a>
           </nav>
-          <p class="footer-copy"><strong><span class="footer-copy-symbol">©</span> 2026 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p>
+          <p class="footer-copy"><strong>© 2026 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p>
         </div>
       </footer>
     </div>
-    <script>
-      (function () {
-        var menu = document.getElementById("home-menu");
-        if (!menu) return;
-        var button = menu.querySelector(".home-menu-trigger");
-        if (!button) return;
-
-        function openMenu() {
-          menu.classList.add("is-open");
-          button.setAttribute("aria-expanded", "true");
-        }
-
-        function closeMenu() {
-          menu.classList.remove("is-open");
-          button.setAttribute("aria-expanded", "false");
-        }
-
-        button.addEventListener("click", function (event) {
-          event.preventDefault();
-          if (menu.classList.contains("is-open")) closeMenu();
-          else openMenu();
-        });
-
-        menu.addEventListener("mouseenter", openMenu);
-        menu.addEventListener("mouseleave", closeMenu);
-
-        document.addEventListener("click", function (event) {
-          if (!menu.contains(event.target)) closeMenu();
-        });
-      })();
-    </script>
+    <script src="./assets/js/site-nav.js"></script>
   </body>
 </html>

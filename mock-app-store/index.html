@@ -13,17 +13,27 @@
   <body>
     <div class="site-shell">
       <header class="site-header">
-        <div class="nav-wrap">
-          <a class="logo-link" href="../" aria-label="The Simulation home"><img src="../assets/images/tstm-logo.webp" alt="The Simulation" /></a>
-          <nav class="nav-links" aria-label="Main navigation">
-            <a class="nav-link" href="../about/">About</a>
-            <a class="nav-link" href="../contact/">Contact</a>
-            <a class="nav-link" href="../contact-1.html">Credits</a>
-            <a class="nav-link" href="../faqs/">FAQs</a>
-            <a class="nav-link" href="../support/">Support</a>
-            <details class="dropdown"><summary>More</summary><div class="dropdown-panel"><a href="../privacy-policy/">Privacy Policy</a><a href="../mock-app-store/">Mock App Store</a><a href="../dev-book/">Dev Book</a></div></details>
-            <a class="nav-link cta" href="../restricted-access/">Restricted Access</a>
-          </nav>
+        <div class="site-topbar">
+          <a class="logo-link site-logo-link" href="../" aria-label="The Simulation home">
+            <img src="../assets/images/tstm-logo.webp" alt="The Simulation" />
+          </a>
+          <div class="site-menu" data-site-menu>
+            <button class="site-menu-trigger" type="button" aria-expanded="false" aria-controls="site-menu-panel">
+              <span class="site-menu-label">Menu</span>
+              <span class="site-menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            </button>
+            <div class="site-menu-panel" id="site-menu-panel" role="menu">
+              <a href="../about/">About</a>
+              <a href="../contact/">Contact</a>
+              <a href="../contact-1.html">Credits</a>
+              <a href="../faqs/">FAQs</a>
+              <a href="../privacy-policy/">Privacy Policy</a>
+              <a href="../support/">Support</a>
+              <a href="../mock-app-store/">Mock App Store</a>
+              <a href="../dev-book/">Dev Book</a>
+              <a class="site-menu-restricted" href="../restricted-access/">Restricted Access</a>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -48,7 +58,7 @@
             <dt>Support URL</dt><dd><a href="https://www.thesimulationtm.com/support" target="_blank" rel="noopener noreferrer">https://www.thesimulationtm.com/support</a></dd>
             <dt>Price</dt><dd>Free</dd>
             <dt>High Motion</dt><dd>Yes</dd>
-            <dt>Copyright</dt><dd>2024 VR Sim Labs LLC</dd>
+            <dt>Copyright</dt><dd>2026 VR Sim Labs LLC</dd>
           </dl>
         </article>
 
@@ -147,7 +157,21 @@
         </article>
       </main>
 
-      <footer class="site-footer"><div class="footer-inner"><nav class="footer-social" aria-label="Social links"><a class="footer-social-link" href="https://www.youtube.com/@TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="../assets/icons/social/youtube.svg" alt="" /></a><a class="footer-social-link" href="https://x.com/TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="../assets/icons/social/x.svg" alt="" /></a><a class="footer-social-link" href="https://www.facebook.com/profile.php?id=61561556140617&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../assets/icons/social/facebook.svg" alt="" /></a><a class="footer-social-link" href="https://www.instagram.com/thesimulationtm/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../assets/icons/social/instagram.svg" alt="" /></a><a class="footer-social-link" href="https://www.tiktok.com/@thesimulationtm" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="../assets/icons/social/tiktok.svg" alt="" /></a><a class="footer-social-link" href="https://www.reddit.com/r/TheSimulationTM/" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><img src="../assets/icons/social/reddit.svg" alt="" /></a><a class="footer-social-link" href="https://www.linkedin.com/company/vr-sim-labs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="../assets/icons/social/linkedin.svg" alt="" /></a></nav><p class="footer-copy"><strong>© 2026 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p></div></footer>
+      <footer class="site-footer">
+        <div class="footer-inner">
+          <nav class="footer-social" aria-label="Social links">
+            <a class="footer-social-link" href="https://www.youtube.com/@TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="../assets/icons/social/youtube.svg" alt="" /></a>
+            <a class="footer-social-link" href="https://x.com/TheSimulationTM" target="_blank" rel="noopener noreferrer" aria-label="X"><img src="../assets/icons/social/x.svg" alt="" /></a>
+            <a class="footer-social-link" href="https://www.facebook.com/profile.php?id=61561556140617&mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../assets/icons/social/facebook.svg" alt="" /></a>
+            <a class="footer-social-link" href="https://www.instagram.com/thesimulationtm/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../assets/icons/social/instagram.svg" alt="" /></a>
+            <a class="footer-social-link" href="https://www.tiktok.com/@thesimulationtm" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><img src="../assets/icons/social/tiktok.svg" alt="" /></a>
+            <a class="footer-social-link" href="https://www.reddit.com/r/TheSimulationTM/" target="_blank" rel="noopener noreferrer" aria-label="Reddit"><img src="../assets/icons/social/reddit.svg" alt="" /></a>
+            <a class="footer-social-link" href="https://www.linkedin.com/company/vr-sim-labs" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><img src="../assets/icons/social/linkedin.svg" alt="" /></a>
+          </nav>
+          <p class="footer-copy"><strong>© 2026 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p>
+        </div>
+      </footer>
     </div>
+    <script src="../assets/js/site-nav.js"></script>
   </body>
 </html>
