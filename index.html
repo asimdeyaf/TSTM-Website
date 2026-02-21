@@ -13,44 +13,37 @@
   <body class="home-page">
     <div class="site-shell home-shell">
       <header class="site-header home-header">
-        <div class="nav-wrap home-nav-wrap">
+        <div class="home-topbar">
           <a class="logo-link home-logo-link" href="./" aria-label="The Simulation home">
             <img src="./assets/images/tstm-logo.webp" alt="The Simulation" />
           </a>
-          <nav class="nav-links home-nav-links" aria-label="Main navigation">
-            <details class="dropdown home-dropdown">
-              <summary>More</summary>
-              <div class="dropdown-panel home-dropdown-panel">
-                <a href="./about/">About</a>
-                <a href="./contact/">Contact</a>
-                <a href="./contact-1.html">Contact 1</a>
-                <a href="./faqs/">FAQs</a>
-                <a href="./privacy-policy/">Privacy Policy</a>
-                <a href="./support/">Support</a>
-                <a href="./mock-app-store/">Mock App Store</a>
-                <a href="./dev-book/">Dev Book</a>
-              </div>
-            </details>
-            <details class="dropdown home-dropdown">
-              <summary>Restricted Access</summary>
-              <div class="dropdown-panel home-dropdown-panel">
-                <a href="./story-outline/">Story Outline</a>
-                <a href="./story-animatics/">Story Animatics</a>
-              </div>
-            </details>
-          </nav>
+          <div class="home-menu" id="home-menu">
+            <button class="home-menu-trigger" type="button" aria-expanded="false" aria-controls="home-menu-panel">Menu</button>
+            <div class="home-menu-panel" id="home-menu-panel" role="menu">
+              <a href="./about/">About</a>
+              <a href="./contact/">Contact</a>
+              <a href="./contact-1.html">Contact 1</a>
+              <a href="./faqs/">FAQs</a>
+              <a href="./privacy-policy/">Privacy Policy</a>
+              <a href="./support/">Support</a>
+              <a href="./mock-app-store/">Mock App Store</a>
+              <a href="./dev-book/">Dev Book</a>
+              <a href="./story-outline/">Story Outline</a>
+              <a href="./story-animatics/">Story Animatics</a>
+              <a class="home-menu-restricted" href="./restricted-access/">Restricted Access</a>
+            </div>
+          </div>
         </div>
       </header>
 
       <main class="page-main home-main">
         <section class="home-hero" aria-label="Hero section">
           <div class="home-hero-content">
-            <p class="home-kicker">The Simulation(TM)</p>
-            <h1 class="home-title">Welcome to The Simulation(TM)</h1>
+            <p class="home-kicker">The Simulation™</p>
+            <h1 class="home-title">Welcome to The Simulation™</h1>
             <p class="home-subtitle"><strong>A VR Journey Like No Other</strong></p>
             <p class="home-copy">Story-driven immersive worlds built for deliberate choices and consequences.</p>
             <div class="home-cta-row">
-              <a class="home-cta home-cta-primary" href="./restricted-access/">Enter Restricted Access</a>
               <a class="home-cta" href="./about/">Learn More</a>
             </div>
           </div>
@@ -58,10 +51,10 @@
 
         <section class="home-marquee" aria-label="Tagline strip">
           <div class="home-marquee-track">
-            <span>Simulate the Past. Predict the future.(TM)</span>
-            <span>Simulate the Past. Predict the future.(TM)</span>
-            <span>Simulate the Past. Predict the future.(TM)</span>
-            <span>Simulate the Past. Predict the future.(TM)</span>
+            <span>Simulate the Past. Predict the future.™</span>
+            <span>Simulate the Past. Predict the future.™</span>
+            <span>Simulate the Past. Predict the future.™</span>
+            <span>Simulate the Past. Predict the future.™</span>
           </div>
         </section>
       </main>
@@ -91,9 +84,40 @@
               <img src="./assets/icons/social/linkedin.svg" alt="" />
             </a>
           </nav>
-          <p class="footer-copy"><strong>(C) 2026 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p>
+          <p class="footer-copy"><strong>© 2026 VR SIM LABS LLC. ALL RIGHTS RESERVED.</strong></p>
         </div>
       </footer>
     </div>
+    <script>
+      (function () {
+        var menu = document.getElementById("home-menu");
+        if (!menu) return;
+        var button = menu.querySelector(".home-menu-trigger");
+        if (!button) return;
+
+        function openMenu() {
+          menu.classList.add("is-open");
+          button.setAttribute("aria-expanded", "true");
+        }
+
+        function closeMenu() {
+          menu.classList.remove("is-open");
+          button.setAttribute("aria-expanded", "false");
+        }
+
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+          if (menu.classList.contains("is-open")) closeMenu();
+          else openMenu();
+        });
+
+        menu.addEventListener("mouseenter", openMenu);
+        menu.addEventListener("mouseleave", closeMenu);
+
+        document.addEventListener("click", function (event) {
+          if (!menu.contains(event.target)) closeMenu();
+        });
+      })();
+    </script>
   </body>
 </html>
