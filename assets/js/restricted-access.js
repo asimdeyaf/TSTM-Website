@@ -1,6 +1,6 @@
 (function () {
   // This is a client-side passcode gate for convenience, not strong security.
-  var PASSCODE = "TSTM-ACCESS";
+  var PASSCODE = "sup";
   var STORAGE_KEY = "tstm_restricted_access";
 
   var form = document.getElementById("access-form");
