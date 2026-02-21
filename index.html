@@ -3,36 +3,73 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>The Simulation | Narrative Portal</title>
-    <meta
-      name="description"
-      content="Access The Simulation narrative story script and animatic."
-    />
-    <link rel="stylesheet" href="./styles.css" />
+    <title>The Simulation | Home</title>
+    <meta name="description" content="The Simulation official portal." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/site.css" />
   </head>
   <body>
-    <main class="page">
-      <header class="hero">
-        <p class="eyebrow">The Simulation(TM)</p>
-        <h1>Narrative Portal</h1>
-        <p class="subtitle">
-          Fast access to the current Twine story script and animatic project.
-        </p>
+    <div class="site-shell">
+      <header class="site-header">
+        <div class="nav-wrap">
+          <a class="logo-link" href="./" aria-label="The Simulation home">
+            <img src="./assets/images/tstm-logo.webp" alt="The Simulation" />
+          </a>
+          <nav class="nav-links" aria-label="Main navigation">
+            <a class="nav-link" href="./about/">About</a>
+            <a class="nav-link" href="./contact/">Contact</a>
+            <a class="nav-link" href="./faqs/">FAQs</a>
+            <a class="nav-link" href="./support/">Support</a>
+            <details class="dropdown">
+              <summary>More</summary>
+              <div class="dropdown-panel">
+                <a href="./privacy-policy/">Privacy Policy</a>
+                <a href="./mock-app-store/">Mock App Store</a>
+                <a href="./dev-book/">Dev Book</a>
+              </div>
+            </details>
+            <a class="nav-link cta" href="./restricted-access/">Restricted Access</a>
+          </nav>
+        </div>
       </header>
 
-      <section class="cards" aria-label="Primary links">
-        <a class="card" href="https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/tstm-story.html">
-          <h2>Story Script (Twine)</h2>
-          <p>Open the latest story overview script from the Twine repository.</p>
-          <span class="cta">Open Story</span>
-        </a>
+      <main class="page-main">
+        <section class="hero" aria-label="Hero section">
+          <div class="hero-inner">
+            <p class="eyebrow">Official Project Site</p>
+            <h1>The Simulation(TM)</h1>
+            <p class="lead">
+              This clean web build mirrors your current Squarespace structure, while moving hosting and version control into your own GitHub-managed stack.
+            </p>
+            <div class="actions">
+              <a class="button primary" href="./restricted-access/">Open Restricted Access</a>
+              <a class="button" href="./about/">Read About</a>
+              <a class="button" href="./support/">Support Links</a>
+            </div>
+          </div>
+        </section>
 
-        <a class="card" href="https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/TS_%20-%20Animatic.html">
-          <h2>Animatic (Twine)</h2>
-          <p>Open the current Twine animatic project output.</p>
-          <span class="cta">Open Animatic</span>
-        </a>
-      </section>
-    </main>
+        <section class="panel-grid" aria-label="Quick links">
+          <article class="panel">
+            <h2>Story + Animatics</h2>
+            <p>Available via passcode-gated portal. Story and animatic open in separate tabs.</p>
+          </article>
+          <article class="panel">
+            <h2>Team Contact</h2>
+            <p>Use the contact page for inquiry routes and project-related communication.</p>
+          </article>
+          <article class="panel">
+            <h2>Migration Status</h2>
+            <p>Homepage and key pages are now code-managed and deployable from GitHub.</p>
+          </article>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-inner">The Simulation(TM) | Code-managed website migration in progress.</div>
+      </footer>
+    </div>
   </body>
 </html>

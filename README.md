@@ -1,19 +1,33 @@
 # TSTM Website
 
-Simple static website for The Simulation(TM) narrative portal.
+Code-managed website for The Simulation(TM).
 
 ## Local Preview
 
-From this folder:
-
 ```bash
+cd '/Users/asimdeyaf/Dropbox/VR Sim Labs LLC/Website/TSTM-Website'
 python3 -m http.server 8000
 ```
 
-Then open:
+Open `http://localhost:8000`.
 
-`http://localhost:8000`
+## Current Structure
 
-## Deployment
+- `index.html`: Homepage
+- `about/`, `contact/`, `faqs/`, `privacy-policy/`, `support/`: key pages
+- `restricted-access/`: passcode entry page
+- `restricted-access/portal/`: gated links page
+- `assets/images/`: locally hosted image assets
+- `assets/css/site.css`: shared styling
+- `assets/js/restricted-access.js`: gate logic
+- `assets/js/portal-guard.js`: gated-page guard logic
 
-This repository is intended for GitHub-hosted source + static deployment.
+## Passcode
+
+Current passcode value is set in:
+
+- `assets/js/restricted-access.js`
+
+Update `PASSCODE` there when needed.
+
+Note: this is client-side access gating for convenience, not strong security.
