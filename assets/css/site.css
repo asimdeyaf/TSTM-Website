@@ -723,7 +723,7 @@ body.home-page .home-marquee-track {
   white-space: nowrap;
   width: max-content;
   padding: 0.88rem 0;
-  animation: tstm-home-marquee 42s linear infinite;
+  animation: tstm-home-marquee 84s linear infinite;
   will-change: transform;
 }
 
@@ -846,7 +846,7 @@ body.home-page .footer-copy-symbol {
   }
 
   body.home-page .home-marquee-track {
-    animation-duration: 60s;
+    animation-duration: 120s;
   }
 
   body.home-page .home-marquee-seq {
