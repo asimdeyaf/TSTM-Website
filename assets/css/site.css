@@ -1205,8 +1205,16 @@ html {
   gap: 0.72rem;
 }
 
-.credits-section + .credits-section {
-  margin-top: 1.35rem;
+.credits-sections {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.credits-section-card {
+  border: 1px solid rgba(101, 132, 164, 0.45);
+  border-radius: 14px;
+  background: rgba(11, 19, 29, 0.76);
+  padding: 1rem;
 }
 
 .credits-section-title {
