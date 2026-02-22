@@ -1205,6 +1205,24 @@ html {
   gap: 0.72rem;
 }
 
+.credits-section + .credits-section {
+  margin-top: 1.35rem;
+}
+
+.credits-section-title {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #e2eefc;
+}
+
+.credits-placeholder {
+  margin-top: 0.45rem;
+  color: #b3c8df;
+  font-size: 0.84rem;
+}
+
 .credits-row {
   border: 1px solid rgba(101, 132, 164, 0.45);
   border-radius: 12px;
@@ -1223,9 +1241,13 @@ html {
   color: #ddeaf9;
 }
 
-.credits-row p,
-.credits-row ul {
+.credits-row p {
   margin: 0;
+}
+
+.credits-values {
+  display: grid;
+  gap: 0.28rem;
 }
 
 .credits-row-wide {
