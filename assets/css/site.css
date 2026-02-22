@@ -1183,6 +1183,22 @@ html {
   gap: 0.6rem;
 }
 
+.pdf-embed-wrap {
+  margin-top: 1rem;
+  border: 1px solid #2f465f;
+  border-radius: 12px;
+  background: #0f1723;
+  overflow: hidden;
+}
+
+.pdf-embed {
+  width: 100%;
+  height: min(84vh, 980px);
+  border: 0;
+  display: block;
+  background: #101a28;
+}
+
 .credits-list {
   margin-top: 1rem;
   display: grid;
