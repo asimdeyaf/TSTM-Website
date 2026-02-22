@@ -22,9 +22,9 @@
 - Twine source repo:
   - `https://github.com/asimdeyaf/TSTM-Twine-Narrative`
 - Twine story URL:
-  - `https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/tstm-story.html`
+  - `https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/tstm-story-overview.html`
 - Twine animatic URL:
-  - `https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/TS_%20-%20Animatic.html`
+  - `https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/tstm-animatic.html`
 - Unity hub documentation index:
   - `/Users/asimdeyaf/Dropbox/VR Sim Labs LLC/_UNITY/_OfficalCollabProjects/TheSimulationTM/Assets/__TSTM__/READMEs/Documentation/README-DocumentationIndex.md`
 
