@@ -16,7 +16,7 @@
 - Source repo:
   - `https://github.com/asimdeyaf/TSTM-Website`
 - Live deployment:
-  - `https://asimdeyaf.github.io/TSTM-Website/`
+  - `https://thesimulationtm.com/`
 
 ## Related Systems
 - Twine source repo:
@@ -42,9 +42,10 @@
 ## Routing And Structure Rules
 - Keep directory-based routes (`<route>/index.html`) for stable clean URLs.
 - Maintain key top-level routes unless explicitly changed:
-  - `/about/`, `/contact/`, `/faqs/`, `/privacy-policy/`, `/support/`, `/mock-app-store/`, `/dev-book/`, `/restricted-access/`
+  - `/about/`, `/contact/`, `/credits/`, `/team/`, `/faqs/`, `/privacy-policy/`, `/support/`, `/mock-app-store/`, `/dev-book/`, `/restricted-access/`
 - Keep legacy-friendly redirects for:
-  - `/story-outline/` and `/story-animatics/` -> restricted access flow.
+  - `/story-outline/` and `/story-animatics/` -> restricted access flow
+  - `/contact-1.html` and `/contact-1/` -> `/credits/`
 
 ## Asset Rules
 - Keep site images under:

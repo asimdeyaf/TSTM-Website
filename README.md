@@ -14,11 +14,17 @@ Open `http://localhost:8000`.
 ## Current Structure
 
 - `index.html`: Homepage
-- `about/`, `contact/`, `faqs/`, `privacy-policy/`, `support/`: key pages
+- `about/`, `contact/`, `credits/`, `team/`, `faqs/`, `privacy-policy/`, `support/`: key pages
+- `mock-app-store/`: Apple Vision Pro teaser listing archive page
+- `dev-book/`: Dev Book entry page
 - `restricted-access/`: passcode entry page
 - `restricted-access/portal/`: gated links page
+- `404.html`: custom not-found page
+- `contact-1.html`, `contact-1/`: legacy redirects to `credits/`
+- `dev-book/spread-viewer/`: legacy redirect to `dev-book/read/`
 - `assets/images/`: locally hosted image assets
 - `assets/css/site.css`: shared styling
+- `assets/js/site-nav.js`: shared menu behavior
 - `assets/js/restricted-access.js`: gate logic
 - `assets/js/portal-guard.js`: gated-page guard logic
 
