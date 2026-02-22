@@ -22,7 +22,7 @@
 - Twine source repo:
   - `https://github.com/asimdeyaf/TSTM-Twine-Narrative`
 - Twine story URL:
-  - `https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/tstm-story-overview.html`
+  - `https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/tstm-story-script.html`
 - Twine animatic URL:
   - `https://asimdeyaf.github.io/TSTM-Twine-Narrative/Stories/tstm-animatic.html`
 - Unity hub documentation index:
