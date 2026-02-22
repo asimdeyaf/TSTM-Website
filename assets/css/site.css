@@ -1180,17 +1180,6 @@ html {
   margin-top: 0.9rem;
 }
 
-.button.is-disabled,
-.button.is-disabled:hover,
-.button.is-disabled:focus-visible {
-  background: #293646;
-  border-color: #3c4d61;
-  color: #9fb0c3;
-  pointer-events: none;
-  cursor: not-allowed;
-  text-decoration: none;
-}
-
 .credits-list {
   margin-top: 1rem;
   display: grid;
