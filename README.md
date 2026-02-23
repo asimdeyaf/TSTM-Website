@@ -20,8 +20,6 @@ Open `http://localhost:8000`.
 - `restricted-access/`: passcode entry page
 - `restricted-access/portal/`: gated links page
 - `404.html`: custom not-found page
-- `contact-1.html`, `contact-1/`: legacy redirects to `credits/`
-- `dev-book/spread-viewer/`: legacy redirect to `dev-book/read/`
 - `assets/images/`: locally hosted image assets
 - `assets/css/site.css`: shared styling
 - `assets/js/site-nav.js`: shared menu behavior
